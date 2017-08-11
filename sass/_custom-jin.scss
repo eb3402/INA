@@ -1,0 +1,50 @@
+// ALT OFFICIAL BLUE
+// $blue_header: rgb(0, 62, 121);
+// $blue_header_darker: darken($blue_header, 50%);
+
+$lighter: 15%;
+
+// Hover correction
+#myHome .btn {
+	&:hover {
+		background-color: lighten($blue_header, $lighter);
+	}
+}
+
+a.btn {
+	@include transition(all, .25s);
+
+	&:hover {
+		color: #FFF;
+		background-color: lighten($blue_header, $lighter);
+	}
+
+	&:visited {
+		color: $white_brand;
+	}
+}
+
+
+// NAVIGATION
+.navbar {
+	a {
+		// Spacing correction
+		&::first-letter {
+			padding-left: 4px;
+		}
+	}
+}
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: lighten($blue_header, $lighter) !important;
+}
+
+// CONTENT
+.special p {
+	font-size: 1.5em;
+}
+
+// .bg-3 h1+p {
+// 	color: white;
+// 	margin-bottom: 2em;
+// }
