@@ -40,9 +40,24 @@ a.btn {
 }
 
 // CONTENT
-.special p {
-	font-size: 1.5em;
+.special {
+	p {
+		font-size: 1.5em;
+	}
+
+	.btn {
+		margin-top: 2em;
+		font-size: 1.25em;
+	}
 }
+
+#contact #signup {
+	.btn {
+		margin-top: 1.1em;
+		// font-size: 1.25em;
+	}
+}
+
 
 // .bg-3 h1+p {
 // 	color: white;
