@@ -22,9 +22,9 @@
         },
         "29c7c76a": {
           "id": "29c7c76a",
-          "path": "contact.html",
-          "output": "contact.html",
-          "name": "contact.html",
+          "path": "participate.html",
+          "output": "participate.html",
+          "name": "participate.html",
           "category": "JUST_WATCH",
           "customOutput": false,
           "imported": false,
