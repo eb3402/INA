@@ -15,6 +15,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+
+	<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+	0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+	for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+	mixpanel.init("34c0fc2e316f0e00e13ecd221c6bbfb3");</script><!-- end Mixpanel -->
 </head>
 
 <body id="students">
@@ -32,7 +37,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="./about.html">ABOUT</a></li>
 					<li class="active"><a href="./students.html">STUDENTS</a></li>
-					<li><a href="./participate.html">GET INVOLVED</a></li>
+					<li><a href="./participate.html">PARTICIPATE</a></li>
 				</ul>
 			</div>
 		</div>
@@ -103,7 +108,7 @@
 		<div class="container">
 			<div>
 				<h1 class="text-center">PARTICIPATION</h1>
-				<p>Participation in the program is team based. All Teachers College and Columbia University students are encouraged to apply. Teams are encouraged to be interdisciplinary and must have <em>at least one</em> currently enrolled Teachers College student. Opportunities will be provided to find teammates.</p>
+				<p>Participation in the program is team based. All Columbia University students are encouraged to apply. Teams are encouraged to be interdisciplinary and must have <em>at least one</em> currently enrolled Teachers College student. Opportunities will be provided to find teammates.</p>
 				<p>Faculty members are not eligible to formally participate on a team, but may serve as mentors or advisers.</p>
 			</div>
 
@@ -254,7 +259,7 @@
 					</div>
 					<div class="thumbnail">
 						<h2>How do I sign up?</h2>
-						<p>See <a href="participate.html">Get Involved</a>.</p>
+						<p>See <a href="./participate.html">Get Involved</a>.</p>
 					</div>
 				</div>
 			</div>
@@ -265,7 +270,7 @@
 		<div class="container">
 			<div id="contacts" class="col-sm-6 text-left">
 				<div>
-					<p>Twitter: @InnovateTC</p>
+					<p>Twitter: <a href="https://twitter.com/innovatetc" target="_blank">@InnovateTC</a></p>
 					<p>Hashtag: #TCInnovation</p>
 				</div>
 
@@ -283,7 +288,7 @@
 				<div id="buttons">
 					<div id="buttons">
 						<div><a href="https://tccolumbia.qualtrics.com/jfe/form/SV_dbY30taHshs9rGB" class="btn" target="_blank"><span>Join Mailing List</span></a></div>
-						<div><a href="participate.html" class="btn"><span>Get Involved</span></a></div>
+						<div><a href="./participate.html" class="btn"><span>Get Involved</span></a></div>
 					</div>
 				</div>
 				<div id="copyright">
@@ -294,6 +299,11 @@
 		</div>
 	</footer>
 
+	<script>
+		mixpanel.track("page:loaded", {
+			"page":"students"
+		});
+	</script>
 </body>
 
 </html>
