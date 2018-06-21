@@ -73,6 +73,11 @@
 		mixpanel.track("page:loaded", {
 			"page":"index"
 		});
+		
+		//GDPR
+		$(document).ready(function() {
+			$.getScript("https://www.tc.columbia.edu/media/media-library-2015/scripts/gdpr.js");
+		});
 	</script>
 </body>
 
