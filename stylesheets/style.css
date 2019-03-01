@@ -227,10 +227,11 @@ body {
   margin: auto;
   text-align: center;
   padding: 4em;
+	padding-bottom: 1em;
   opacity: 0.80; }
 /* line 253, ../sass/_custom-base.scss */
-#about img:first-of-type:not(:last-of-type) {
-  padding-bottom: 0; }
+#about img:last-of-type {
+  padding-bottom: 5em; }
 /* line 257, ../sass/_custom-base.scss */
 #about > div {
   margin-bottom: 15em; }

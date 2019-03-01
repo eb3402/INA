@@ -248,11 +248,12 @@ body {
 		margin: auto;
 		text-align: center;
 		padding: 4em;
+		padding-bottom: 0;
 		opacity: 0.80;
 	}
-	img:first-of-type:not(:last-of-type) {
-		padding-bottom: 0;
-	}
+	// img:first-of-type:not(:last-of-type) {
+	// 	padding-bottom: 0;
+	// }
 
 	> div {
 		margin-bottom: $spacing_main;
