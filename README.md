@@ -1,12 +1,7 @@
-# README
+# README.md
+
+[GitPages URL](https://jmk2142.github.io/innovationAward/)
 
 ## CHANGE LOG
 
-Generally not a good idea to muck around with button padding for spacing and such. Buttons really want to be inline elements.
-
-Semantic problems:
-- no ul as parent for li
-- heading spam
-
-- Logo (branded)
-	- Blur filter
+Updated to 2019 (mini) INA version.
