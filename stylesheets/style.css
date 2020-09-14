@@ -228,7 +228,7 @@ body {
   text-align: center;
   padding: 4em;
 	padding-bottom: 1em;
-  opacity: 0.80; }
+  opacity: 1; }
 /* line 253, ../sass/_custom-base.scss */
 #about img:last-of-type {
   padding-bottom: 5em; }
