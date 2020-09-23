@@ -232,6 +232,14 @@ body {
 /* line 253, ../sass/_custom-base.scss */
 #about img:last-of-type {
   padding-bottom: 5em; }
+
+#about img.sponsor {
+  width: auto;
+  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+}
 /* line 257, ../sass/_custom-base.scss */
 #about > div {
   margin-bottom: 15em; }
@@ -338,3 +346,7 @@ a.btn:visited {
 /* line 55, ../sass/_custom-jin.scss */
 #contact #signup .btn {
   margin-top: 1.1em; }
+
+.bg-1 h2, .bg-1 p {
+  color: white;
+}
