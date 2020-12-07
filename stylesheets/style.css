@@ -50,7 +50,7 @@ canvas {
 body {
   font: 400 15px 'Roboto', sans-serif;
   color: #1b3d6e;
-  padding-top: 15em;
+  padding-top: 10em;
   min-height: 100vh; }
 @media (max-width: 768px) {
   /* line 56, ../sass/_custom-base.scss */
