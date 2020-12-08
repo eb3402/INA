@@ -9,7 +9,7 @@ let teams = [
     summary: "Learners often struggle self-regulate their learning processes in online environments. We aim to provide a tool to improve self-regulated learning for learners struggling with e-Learning environments.",
     members: ["Ningcong Tong","Yichen Yao","Jiaen Zhang","Kristin Wang","You Lyu"]
   },{
-    teamName: "roARgh",
+    teamName: "Roargh",
     projectName: "StorySky",
     documentURL: "roARgh - StorySky.pdf",
     youtubeURL: "https://youtu.be/XElmuKWoW4I",
@@ -74,6 +74,7 @@ let teams = [
   }
 ];
 
+// RAMDOMIZE THE ARRAY
 for(let i = teams.length - 1; i > 0; i--){
   const j = Math.floor(Math.random() * i)
   const temp = teams[i]
@@ -81,16 +82,8 @@ for(let i = teams.length - 1; i > 0; i--){
   teams[j] = temp
 }
 
-let teamsHTML = "";
-
-teams.forEach(function(team) {
-  if (team.youtubeID) {
-    teamsHTML += makeTeamHTML(team);
-  }
-});
-
-document.querySelector("#project-rows").innerHTML = teamsHTML;
-
+// Function that CONSTRUCTS HTML TEMPLATE STRING
+// Interpolate team data into the template
 function makeTeamHTML(data) {
   let HTML = `<div class="row" style="margin-bottom:5em;">
     <div class="col-sm-6 col-xs-12" style="background-color:#1b3d6e;padding:1em;">
@@ -101,7 +94,6 @@ function makeTeamHTML(data) {
         <a style="color:white;" href="./assets/INA2020/documents/${data.documentURL}" download><i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;Download &mdash; ${data.projectName} Research and Design Summary</a>
       </p>
     </div>
-
     <div class="col-sm-6 col-xs-12" style="padding:1em;">
       <h2 style="margin-top:0;font-family:'Roboto', sans-serif;font-size:2.25em;font-weight:500;">${data.projectName}</h2>
       <h3 style="margin-top:.75em;">Team: ${data.teamName}</h3>
@@ -113,14 +105,30 @@ function makeTeamHTML(data) {
   return HTML;
 }
 
-// START_TIME = Tue Dec 08 2020 18:00:00 GMT-0500 (Eastern Standard Time)
 
-const START_TIME = 1607468400000;
+// CONSTRUCT THE HTML
+let teamsHTML = "";
+
+teams.forEach(function(team) {
+  if (team.youtubeID) {
+    teamsHTML += makeTeamHTML(team);
+  }
+});
+
+// ADD it to the View State (page)
+document.querySelector("#project-rows").innerHTML = teamsHTML;
+
+
+// Code to show VOTING buttons only after Dec 18
+// START_TIME = Tue Dec 18 2020 18:00:00 GMT-0500 (EST)
+const START_TIME = 1608332400000;
 let timeNow = Date.now();
 if (timeNow > START_TIME) {
   enableLinks();
 }
 
+// Function to remove .vote-section-hidden class from
+// voting buttons
 function enableLinks() {
   let sectionEls = [...document.querySelectorAll(".vote-section-hidden")];
   sectionEls.forEach(el => {
