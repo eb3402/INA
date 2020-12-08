@@ -1,7 +1,8 @@
 let teams = [
   {
     teamName: "Sand Sculptors",
-    projectName: "Sand Sculptors",
+    projectName: "Build Time!",
+    documentURL: "Sand Sculptors - Build Time.pdf",
     youtubeURL: "https://youtu.be/GUTRugWcxR0",
     youtubeID: "GUTRugWcxR0",
     videoFileURL: "https://drive.google.com/drive/folders/16Y__XGXRO9rtqaDr4bCIXZPRON5SEb4q?usp=sharing",
@@ -10,6 +11,7 @@ let teams = [
   },{
     teamName: "roARgh",
     projectName: "StorySky",
+    documentURL: "roARgh - StorySky.pdf",
     youtubeURL: "https://youtu.be/XElmuKWoW4I",
     youtubeID: "XElmuKWoW4I",
     videoFileURL: "",
@@ -18,6 +20,7 @@ let teams = [
   },{
     teamName: "Double X",
     projectName: "Science of Life",
+    documentURL: "Double X - Science of Life.pdf",
     youtubeURL: "https://youtu.be/UwibA-SRPZM",
     youtubeID: "UwibA-SRPZM",
     videoFileURL: "",
@@ -26,6 +29,7 @@ let teams = [
   },{
     teamName: "Musitation",
     projectName: "Musitation",
+    documentURL: "Musitation - Musitation.pdf",
     youTubeURL: "https://youtu.be/8Cn80C9XAzI",
     youtubeID: "8Cn80C9XAzI",
     videoFileURL: "https://drive.google.com/file/d/1axBldv7aL86dS1_eYehfnZLk1vW0GRP0/view?usp=sharing",
@@ -34,6 +38,7 @@ let teams = [
   },{
     teamName: "C Plan",
     projectName: "LinguaBuddy",
+    documentURL: "C Plan - LinguaBuddy.pdf",
     youTubeURL: "https://youtu.be/k8UE2y-FZsk",
     youtubeID: "k8UE2y-FZsk",
     videoFileURL: "",
@@ -42,6 +47,7 @@ let teams = [
   },{
     teamName: "Grassroots",
     projectName: "Grassroots",
+    documentURL: "Grassroots - Grassroots.pdf",
     youTubeURL: "https://youtu.be/W1hMVQH2x28",
     youtubeID: "W1hMVQH2x28",
     videoFileURL: "",
@@ -50,6 +56,7 @@ let teams = [
   },{
     teamName: "It's Okay",
     projectName: "Love Okay",
+    documentURL: "It's Okay - Love Okay.pdf",
     youTubeURL: "https://youtu.be/91IEAWZsW4c",
     youtubeID: "91IEAWZsW4c",
     videoFileURL: "https://drive.google.com/file/d/1aPVOk6j7gBLKxBjclPJI78dKo9HhZJWU/view?usp=sharing",
@@ -58,6 +65,7 @@ let teams = [
   },{
     teamName: "WETech",
     projectName: "WETech",
+    documentURL: "WETech - WETech.pdf",
     youTubeURL: "https://youtu.be/AJV8kUSjYKA",
     youtubeID: "AJV8kUSjYKA",
     videoFileURL: "",
@@ -66,7 +74,6 @@ let teams = [
   }
 ];
 
-
 for(let i = teams.length - 1; i > 0; i--){
   const j = Math.floor(Math.random() * i)
   const temp = teams[i]
@@ -74,61 +81,35 @@ for(let i = teams.length - 1; i > 0; i--){
   teams[j] = temp
 }
 
-let alt = false;
 let teamsHTML = "";
 
 teams.forEach(function(team) {
   if (team.youtubeID) {
-    teamsHTML += makeTeamHTML(team, alt);
-    // alt = !alt;
+    teamsHTML += makeTeamHTML(team);
   }
 });
 
 document.querySelector("#project-rows").innerHTML = teamsHTML;
-/*
-<div>
-  <p style="margin-top:1em;color:white;">To vote <strong>${data.projectName}</strong> for the <em>People's Choice Award</em> click below:</p>
-  <a href="./participate.html" class="btn" style="border-width:2px;background-color:#F5F5F5;color:#333333;">
-    <span>VOTE: People's Choice</span>
-  </a>
-</div>
-*/
-function makeTeamHTML(data, alt=false) {
-  let HTML = "";
-  if (!alt) {
-    HTML = `<div class="row" style="margin-bottom:5em;">
-      <div class="col-sm-6 col-xs-12" style="background-color:#1b3d6e;padding:1em;">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="https://www.youtube.com/embed/${data.youtubeID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <div class="col-sm-6 col-xs-12" style="padding:1em;">
-        <h2 style="margin-top:0;font-family:'Roboto', sans-serif;font-size:2.25em;font-weight:500;">${data.projectName}</h2>
-        <h3 style="margin-top:.75em;">Team: ${data.teamName}</h3>
-        <p style="margin-top:1em;"><em>${data.members.join(", ")}</em></p>
-        <p>${data.summary}</p>
+function makeTeamHTML(data) {
+  let HTML = `<div class="row" style="margin-bottom:5em;">
+    <div class="col-sm-6 col-xs-12" style="background-color:#1b3d6e;padding:1em;">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.youtube.com/embed/${data.youtubeID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </div>`
-  } else {
-    HTML = `<div class="row" style="margin-bottom:5em;">
-      <div class="col-sm-6 col-xs-12 col-xs-push-12" style="padding:1em;">
-        <h2 style="margin-top:0;">Team ${data.teamName}</h2>
-        <p>${data.summary}</p>
-        <p>Click below to vote this project for the <strong>People's Choice Award</strong>:</p>
-        <br>
-        <a href="./participate.html" class="btn">
-          <span>VOTE: People's Choice</span>
-        </a>
-      </div>
-      <div class="col-sm-6 col-xs-12" style="background-color:#1b3d6e;padding:1em;">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe src="https://www.youtube.com/embed/${data.youtubeID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <p style="margin-top:1em;color:white;">${data.members.join(", ")}</p>
-      </div>
-    </div>`
-  }
+      <p style="margin-top:1.5em;">
+        <a style="color:white;" href="./assets/INA2020/documents/${data.documentURL}" download><i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;Download &mdash; ${data.projectName} Research and Design Summary</a>
+      </p>
+    </div>
+
+    <div class="col-sm-6 col-xs-12" style="padding:1em;">
+      <h2 style="margin-top:0;font-family:'Roboto', sans-serif;font-size:2.25em;font-weight:500;">${data.projectName}</h2>
+      <h3 style="margin-top:.75em;">Team: ${data.teamName}</h3>
+      <p style="margin-top:1em;"><em>${data.members.join(", ")}</em></p>
+      <p>${data.summary}</p>
+    </div>
+  </div>`;
+
   return HTML;
 }
 
