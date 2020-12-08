@@ -17,10 +17,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
 
 	<style>
-		.equal {
-		  display: flex;
-		  display: -webkit-flex;
-		  flex-wrap: wrap;
+		.vote-section-hidden {
+			display: none;
 		}
 	</style>
 
@@ -86,11 +84,13 @@
             <small>VOTE for your favorite</small><br>
           </h1>
           <p>Browse the INA2020 team project showcase and vote for your favorite<br>to determine this year's <strong>People's Choice Award.</strong></p>
-					<p>Visit our People's Choice Award voting survey!</p>
-					<div>
-					  <a href="https://forms.gle/zhFfiZ5YYK5uzT2T6" class="btn">
-					    <span>VOTE NOW</span>
-					  </a>
+					<div class="vote-section-hidden">
+						<p>Visit our People's Choice Award voting survey!</p>
+						<div>
+						  <a href="https://forms.gle/zhFfiZ5YYK5uzT2T6" class="btn">
+						    <span>VOTE NOW</span>
+						  </a>
+						</div>
 					</div>
         </div>
       </div>
@@ -153,7 +153,7 @@
     </div>
   </div> -->
 
-	<div class="container" style="margin-bottom:5em;">
+	<div class="container vote-section-hidden" style="margin-bottom:5em;">
 
     <div class="row">
       <div class="col-md-12">
