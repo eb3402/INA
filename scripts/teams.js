@@ -49,9 +49,9 @@ let teams = [
     members: ["Dennis Morgan","Echo Zhang","Uttarika Shetty","Nancye Blair Black","Hongjin Du"]
   },{
     teamName: "It's Okay",
-    projectName: "Project Name HERE",
-    youTubeURL: "",
-    youtubeID: "",
+    projectName: "Love Okay",
+    youTubeURL: "https://youtu.be/91IEAWZsW4c",
+    youtubeID: "91IEAWZsW4c",
     videoFileURL: "https://drive.google.com/file/d/1aPVOk6j7gBLKxBjclPJI78dKo9HhZJWU/view?usp=sharing",
     summary: "All intimate relationships involve some degrees of conflict. We've designed an interactive journal that helps users practice mindfulness, document and track their emotional patterns along with an AI-empowered chatbot system that provides relationship consultation.",
     members: ["Lingyi Zhuo","Zhuoda Wu","Bora Shin"]
