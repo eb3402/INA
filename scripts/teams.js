@@ -57,8 +57,8 @@ let teams = [
     teamName: "It's Okay",
     projectName: "Love Okay",
     documentURL: "It's Okay - Love Okay.pdf",
-    youTubeURL: "https://youtu.be/91IEAWZsW4c",
-    youtubeID: "91IEAWZsW4c",
+    youTubeURL: "https://youtu.be/H0OB47n3iVQ",
+    youtubeID: "H0OB47n3iVQ",
     videoFileURL: "https://drive.google.com/file/d/1aPVOk6j7gBLKxBjclPJI78dKo9HhZJWU/view?usp=sharing",
     summary: "All intimate relationships involve some degrees of conflict. We've designed an interactive journal that helps users practice mindfulness, document and track their emotional patterns along with an AI-empowered chatbot system that provides relationship consultation.",
     members: ["Lingyi Zhuo","Zhuoda Wu","Bora Shin"]
