@@ -51,7 +51,7 @@ let teams = [
     youTubeURL: "https://youtu.be/W1hMVQH2x28",
     youtubeID: "W1hMVQH2x28",
     videoFileURL: "",
-    summary: "Activists' ageist perspectives toward other activities and activist activities keep organizations from maximizing their impact. Grassroots is an app that promotes sustained engagement and intergenerational cooperation in organization-based activism. Grassroots builds an intergenerational community and validates the advocacy efforts of both young and old.",
+    summary: "Activists' ageist perspectives toward other activists and activist activities keep organizations from maximizing their impact. Grassroots is an app that promotes sustained engagement and intergenerational cooperation in organization-based activism. Grassroots builds an intergenerational community and validates the advocacy efforts of both young and old.",
     members: ["Dennis Morgan","Echo Zhang","Uttarika Shetty","Nancye Blair Black","Hongjin Du"]
   },{
     teamName: "It's Okay",
