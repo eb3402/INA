@@ -1,3 +1,26 @@
+let winners = [
+  {
+    teamName: "Roargh",
+    projectName: "StorySky",
+    documentURL: "roARgh - StorySky.pdf",
+    youtubeURL: "https://youtu.be/XElmuKWoW4I",
+    youtubeID: "XElmuKWoW4I",
+    videoFileURL: "",
+    summary: "COVID has ... forced us all to realize the importance of our relationships for our social, emotional, and cognitive development and well-being. Our goal is to use the technology we have to reconnect families over distance through the telling of personal stories, providing an interactive story-time experience to rebuild those bonds and create a sort of keepsake of those fleeting memories.",
+    members: ["David Zikovitz","Ying-Chen Lin","Mulan Fu","Marina Lemee"],
+    award: "INA 2020 Award"
+  },{
+    teamName: "Musitation",
+    projectName: "Musitation",
+    documentURL: "Musitation - Musitation.pdf",
+    youTubeURL: "https://youtu.be/8Cn80C9XAzI",
+    youtubeID: "8Cn80C9XAzI",
+    videoFileURL: "https://drive.google.com/file/d/1axBldv7aL86dS1_eYehfnZLk1vW0GRP0/view?usp=sharing",
+    summary: "After COVID, people who have an interest in music creation are afraid of continuing in-person social musical activities although they desire immersive music learning and meaningful interpersonal interactions. The goal of Musitation is to support meaningful social interaction through music and to inspire people to creatively express themselves through collaborative VR music experiences.",
+    members: ["Fei Wang","Daniel Ahn","Anh-Thu Phan","Calley Nelson","Jason Reid"],
+    award: "People's Choice Award"
+  }
+];
 let teams = [
   {
     teamName: "Sand Sculptors",
@@ -9,15 +32,6 @@ let teams = [
     summary: "Learners often struggle self-regulate their learning processes in online environments. We aim to provide a tool to improve self-regulated learning for learners struggling with e-Learning environments.",
     members: ["Ningcong Tong","Yichen Yao","Jiaen Zhang","Kristin Wang","You Lyu"]
   },{
-    teamName: "Roargh",
-    projectName: "StorySky",
-    documentURL: "roARgh - StorySky.pdf",
-    youtubeURL: "https://youtu.be/XElmuKWoW4I",
-    youtubeID: "XElmuKWoW4I",
-    videoFileURL: "",
-    summary: "COVID has ... forced us all to realize the importance of our relationships for our social, emotional, and cognitive development and well-being. Our goal is to use the technology we have to reconnect families over distance through the telling of personal stories, providing an interactive story-time experience to rebuild those bonds and create a sort of keepsake of those fleeting memories.",
-    members: ["David Zikovitz","Ying-Chen Lin","Mulan Fu","Marina Lemee"]
-  },{
     teamName: "Double X",
     projectName: "Science of Life",
     documentURL: "Double X - Science of Life.pdf",
@@ -26,15 +40,6 @@ let teams = [
     videoFileURL: "",
     summary: "A key aspect of our product is that it connects real life experiences from the students with school science. Our survey directed at Brazilian teachers and students showed great interest in connecting formal knowledge to phenomena observed in everyday life.",
     members: ["HyunSoo Suh","Kelley Cameron","Fernanda Albuquerque de Araujo"]
-  },{
-    teamName: "Musitation",
-    projectName: "Musitation",
-    documentURL: "Musitation - Musitation.pdf",
-    youTubeURL: "https://youtu.be/8Cn80C9XAzI",
-    youtubeID: "8Cn80C9XAzI",
-    videoFileURL: "https://drive.google.com/file/d/1axBldv7aL86dS1_eYehfnZLk1vW0GRP0/view?usp=sharing",
-    summary: "After COVID, people who have an interest in music creation are afraid of continuing in-person social musical activities although they desire immersive music learning and meaningful interpersonal interactions. The goal of Musitation is to support meaningful social interaction through music and to inspire people to creatively express themselves through collaborative VR music experiences.",
-    members: ["Fei Wang","Daniel Ahn","Anh-Thu Phan","Calley Nelson","Jason Reid"]
   },{
     teamName: "C Plan",
     projectName: "LinguaBuddy",
