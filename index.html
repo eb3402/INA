@@ -16,12 +16,37 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-	<script src="scripts/custom.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script> -->
+	<!-- <script src="scripts/custom.js"></script> -->
 	<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
 	0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
 	for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
 	mixpanel.init("8f1fc4c8f5cff9b0f03d7eebdb526f08");</script><!-- end Mixpanel -->
+	<style>
+		#myHome {
+			width: auto;
+    	height: auto;
+		}
+		#title img {
+			width: auto;
+		}
+		#title img.tc_logo {
+			width: 300px;
+		}
+		#title #ina-carousel, #title #ina-carousel div {
+			padding: 0;
+		}
+		#ina-carousel ul:not(.nav) li, ol:not(.nav) li {
+			/* line-height: 1.5em; */
+			margin-bottom: 0;
+		}
+		#ina-carousel .carousel-control.right, #ina-carousel .carousel-control.left {
+    background-image: none;
+		}
+		#ina-carousel .carousel-control {
+			text-shadow: -3px 3px 8px #000;
+		}
+	</style>
 </head>
 
 
@@ -51,8 +76,12 @@
 	</nav>
 	<div class="container-fluid">
 		<div id="title" class="noselect text-center">
-			<img src="./assets/TC-logo-stacked-plus.png">
+			<img class="tc_logo" src="./assets/TC-logo-stacked-plus.png">
 			<h1>INNOVATION AWARD 2022</h1>
+			<h2 style="line-height:1.5em;">We're back - LIVE at the Smith Learning Theater!<br>Thursday - April 28, 2022 from 6-8pm EST</h2>
+			<a href="https://docs.google.com/forms/d/1Nbj5TYQNIpPhOQLRF0LGMK7_On9T2-9Il6Kuo_bjvsk/viewform?edit_requested=true" class="btn">
+				<span>RSVP TODAY</span>
+			</a>
 
 			<!-- <p class="lead">Congratulations Team Roargh - Project StorySky and Team Musitation - Project Musitation</strong><br>This year's INA 2020 Award and People's Choice Award Winners</p>
 			<a href="./event.html" class="btn" style="margin-top:1em;">
@@ -61,27 +90,90 @@
 
 			<h2 style="margin-top:2.5em;">This Year's Theme: Designing Learning Experiences in the "Metaverse"</h2>
 
-			<!-- <div class="row">
+			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<p class="">This year, student groups developed research-informed educational technology design in response to the theme, Life After COVID. Come celebrate the showcase of INA 2020 projects and watch three finalist student groups compete for the title of the winner of INA 2020 on our <strong><a href="./event.html">Live Event Page</a></strong>. See you there!</p>
+					<div id="ina-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#ina-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#ina-carousel" data-slide-to="1"></li>
+							<li data-target="#ina-carousel" data-slide-to="2"></li>
+							<li data-target="#ina-carousel" data-slide-to="3"></li>
+							<li data-target="#ina-carousel" data-slide-to="4"></li>
+							<li data-target="#ina-carousel" data-slide-to="5"></li>
+							<li data-target="#ina-carousel" data-slide-to="6"></li>
+							<li data-target="#ina-carousel" data-slide-to="7"></li>
+							<li data-target="#ina-carousel" data-slide-to="8"></li>
+						</ol>
+					
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="./assets/INA2022/INA_Classroom_A.jpg" alt="Classroom with expert mentor">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Mentor_A.jpg" alt="Experts from Google Education speaking">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Classroom_C.jpg" alt="Students listening to mentors">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Classroom_D.jpg" alt="Student sharing thoughts on metaverse">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Work_B.jpg" alt="Students ideating">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Mentor_B.jpg" alt="Mentors talking about Figma">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Work_D.jpg" alt="Students signing up for INA">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Work_C.jpg" alt="Students demoing VR technology">
+							</div>
+							<div class="item">
+								<img src="./assets/INA2022/INA_Classroom_B.jpg" alt="Students discussing projects">
+							</div>
+						</div>
+					
+						<!-- Controls -->
+						<a class="left carousel-control" href="#ina-carousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#ina-carousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
-			</div> -->
-
-			<div>
-				<a href="./about.html" class="btn">
-					<span>LEARN MORE</span>
-				</a>
-				<!-- <a href="./participate.html" class="btn">
-					<span>GET INVOLVED</span>
-				</a> -->
-				<a href="./support.html" class="btn">
-					<span>SUPPORT US</span>
-				</a>
 			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<p class="">This year, student groups developed research-informed educational technology design in response to the theme, Designing Learning Experiences in the "Metaverse". Come celebrate the showcase of INA 2022 projects and watch three finalist student groups compete for the title of the winner of INA 2022 on our <strong><a href="./event.html">Event Page</a></strong>. See you there!</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<a href="./about.html" class="btn">
+						<span>LEARN MORE</span>
+					</a>
+					<!-- <a href="./participate.html" class="btn">
+						<span>GET INVOLVED</span>
+					</a> -->
+					<a href="./support.html" class="btn">
+						<span>SUPPORT US</span>
+					</a>
+				</div>
+			</div>
+			<br><br><br>
 		</div>
 	</div>
 
-	<script>
+	<!-- <script>
 		mixpanel.track("page:loaded", {
 			"page":"index"
 		});
@@ -91,12 +183,12 @@
 			$.getScript("https://www.tc.columbia.edu/media/media-library-2015/scripts/gdpr.js");
 			$
 		});
-	</script>
+	</script> -->
 
 	<!-- ART Attribution -->
-	<div id="artistID" style="position:absolute;bottom:1em;right:2em;">
+	<!-- <div id="artistID" style="position:absolute;bottom:1em;right:2em;">
 		<p>Digital Art by Zhenzhen Qi</p>
-	</div>
+	</div> -->
 </body>
 
 </html>

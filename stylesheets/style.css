@@ -350,3 +350,17 @@ a.btn:visited {
 .bg-1 h2, .bg-1 p {
   color: white;
 }
+
+/* CUSTOM */
+/* #title img {
+  width: auto;
+}
+#title img.tc_logo {
+  width: 300px;
+}
+#title #ina-carousel, #title #ina-carousel div {
+  padding: 0;
+}
+#ina-carousel ul:not(.nav) li, ol:not(.nav) li {
+  margin-bottom: 0;
+} */
