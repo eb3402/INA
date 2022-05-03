@@ -1,8 +1,8 @@
 let winners = [
   {
-    teamName: "Melionare",
+    teamName: "Melionaire",
     projectName: "Dollar Dollar",
-    documentURL: "Melionare.pdf",
+    documentURL: "Melionaire.pdf",
     youtubeURL: "https://youtu.be/pjuJPCd0pZk",
     youtubeID: "pjuJPCd0pZk",
     videoFileURL: "",
@@ -24,12 +24,12 @@ let winners = [
 let teams = [
   {
     teamName: "WAACK",
-    projectName: "[De]Alienated",
+    projectName: "[De]Alienation",
     documentURL: "WAACK.pdf",
     youtubeURL: "https://youtu.be/6InioX3Z7Qg",
     youtubeID: "6InioX3Z7Qg",
     videoFileURL: "",
-    summary: "[De]Alienated is a VR narrative-based game where the player acts as a human trying to navigate an unfamiliar planet to interact and form connections with aliens. Their goal is to find a way back home.",
+    summary: "[De]Alienation is a VR narrative-based game where the player acts as a human trying to navigate an unfamiliar planet to interact and form connections with aliens. Their goal is to find a way back home.",
     members: ["Chenyou Wu","Ashley Yoon","Wajahat Azfal","Kelly Huang","Akio Goya"]
   },{
     teamName: "Sensy5",
@@ -39,7 +39,7 @@ let teams = [
     youtubeID: "FPLMbWq7ynA",
     videoFileURL: "",
     summary: "Leverage the orientation experience by creating an immersive VR simulation and an easy-to-use web application with step-by-step guidance to help students navigate the school and get familiar with the university system, policies, and layout.",
-    members: ["Chenyou Wu","Ashley Yoon","Wajahat Azfal","Kelly Huang","Akio Goya"]
+    members: ["Janani Harinarayanan","Wen Xuan Siow","Yvonne Wang"]
   },{
     teamName: "2Fun",
     projectName: "ConnectVerse",
@@ -48,19 +48,17 @@ let teams = [
     youtubeID: "cklPd1C8HJ0",
     videoFileURL: "",
     summary: "It's important to build connections in both the virtual and physical world. ConnectVerse will start with the elements and processes of connection building, integrating various information and resources both online and offline, thus helping users to build better connections.",
-    members: ["Yanqiu Li","Jingjing Bao"]
-  },
-  // {
-  //   teamName: "VisualLanguage",
-  //   projectName: "Grandma's Cooking Diary",
-  //   documentURL: "VisualLanguage.pdf",
-  //   youtubeURL: "https://youtu.be/",
-  //   youtubeID: "",
-  //   videoFileURL: "",
-  //   summary: "It's important to build connections in both the virtual and physical world. ConnectVerse will start with the elements and processes of connection building, integrating various information and resources both online and offline, thus helping users to build better connections.",
-  //   members: ["Yanqiu Li","Jingjing Bao"]
-  // },
-  {
+    members: ["Yanqiu Li","Jingjing Bao","Junke Chen"]
+  },{
+    teamName: "VisualLanguage",
+    projectName: "Grandma's Cooking Diary",
+    documentURL: "VisualLanguage.pdf",
+    youtubeURL: "https://youtu.be/Clz2ownu8-8",
+    youtubeID: "Clz2ownu8-8",
+    videoFileURL: "",
+    summary: "Grandma's Cooking Diary is an app focused on Mandarin Chinese language learning in the context of cooking.",
+    members: ["Qing Tian","Shiyao Wei","Haoming Sun","Yuxing Lu","Ruowen Niu"]
+  },{
     teamName: "FantasticFour",
     projectName: "Pivotal",
     documentURL: "FantasticFour.pdf",
@@ -68,11 +66,11 @@ let teams = [
     youtubeID: "Mec2JDeluGE",
     videoFileURL: "",
     summary: "Many college students report feeling unsure about what they’re going to do in the future. We aim to create an immersive experience in crafting and engaging with your own story, however, the most immersive component of the platform will be exploring others' work.",
-    members: ["Yanqiu Li","Jingjing Bao"]
+    members: ["Daniel Hiterer","Megan Henderson","Sharena Taylor","Ethan Bookstein"]
   },{
     teamName: "Macy Research Lab",
     projectName: "Modsphere",
-    documentURL: "https://docs.google.com/document/d/e/2PACX-1vQBC4xeiVPss7WIaR4dYJIF8eSdy4rIw4AxSdgOZFXBTElqspy1EurbnlcNG1iL7Dp4FJKWYrtSbdPb/pub",
+    documentURL: "MacyResearchLab.pdf",
     youtubeURL: "https://youtu.be/NE-kTQ_c56Y",
     youtubeID: "NE-kTQ_c56Y",
     videoFileURL: "",
@@ -108,7 +106,7 @@ function makeTeamHTML(data) {
         <iframe src="https://www.youtube.com/embed/${data.youtubeID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <p style="margin-top:1.5em;">
-        <a style="color:white;" href="./assets/INA2020/documents/${data.documentURL}" download><i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;Download &mdash; ${data.projectName} Research and Design Summary</a>
+        <a style="color:white;" href="./assets/INA2022/Documents/${data.documentURL}" download><i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;Download &mdash; ${data.projectName} Research and Design Summary</a>
       </p>
     </div>
     <div class="col-sm-6 col-xs-12" style="padding:1em;">
@@ -136,19 +134,19 @@ teams.forEach(function(team) {
 document.querySelector("#project-rows").innerHTML = teamsHTML;
 
 
-// Code to show VOTING buttons only after Dec 18
-// START_TIME = Tue Dec 18 2020 18:00:00 GMT-0500 (EST)
-const START_TIME = 1608332400000;
-let timeNow = Date.now();
-if (timeNow > START_TIME) {
-  enableLinks();
-}
+// // Code to show VOTING buttons only after Dec 18
+// // START_TIME = Tue Dec 18 2020 18:00:00 GMT-0500 (EST)
+// const START_TIME = 1608332400000;
+// let timeNow = Date.now();
+// if (timeNow > START_TIME) {
+//   enableLinks();
+// }
 
-// Function to remove .vote-section-hidden class from
-// voting buttons
-function enableLinks() {
-  let sectionEls = [...document.querySelectorAll(".vote-section-hidden")];
-  sectionEls.forEach(el => {
-    el.classList.remove('vote-section-hidden');
-  });
-}
+// // Function to remove .vote-section-hidden class from
+// // voting buttons
+// function enableLinks() {
+//   let sectionEls = [...document.querySelectorAll(".vote-section-hidden")];
+//   sectionEls.forEach(el => {
+//     el.classList.remove('vote-section-hidden');
+//   });
+// }
