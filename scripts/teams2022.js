@@ -105,9 +105,6 @@ function makeTeamHTML(data) {
       <div class="embed-responsive embed-responsive-16by9">
         <iframe src="https://www.youtube.com/embed/${data.youtubeID}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <p style="margin-top:1.5em;">
-        <a style="color:white;" href="./assets/INA2022/Documents/${data.documentURL}" download><i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;Download &mdash; ${data.projectName} Research and Design Summary</a>
-      </p>
     </div>
     <div class="col-sm-6 col-xs-12" style="padding:1em;">
       <h2 style="margin-top:0;font-family:'Roboto', sans-serif;font-size:2.25em;font-weight:500;">${data.projectName}</h2>
@@ -116,6 +113,10 @@ function makeTeamHTML(data) {
       <p>${data.summary}</p>
     </div>
   </div>`;
+
+  // <p style="margin-top:1.5em;">
+  // <a style="color:white;" href="./assets/INA2022/Documents/${data.documentURL}" download><i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;Download &mdash; ${data.projectName} Research and Design Summary</a>
+  // </p>
 
   return HTML;
 }
