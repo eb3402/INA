@@ -62,8 +62,8 @@
       teamName: "DEI DIY",
       projectName: "DEI DIY",
       documentURL: "",
-      youtubeURL: "",
-      youtubeID: "",
+      youtubeURL: "https://youtu.be/gS3CLUXdvEg",
+      youtubeID: "gS3CLUXdvEg",
       videoFileURL: "",
       summary: "Everyone has unconscious biases and makes snap judgments about others. DEI DIY is a three-part training program with activities and discussions for experienced teachers to realize their unconscious biases and have a safe space to practice holding back snap judgments. In Part 1, teachers choose between two students to select into a science competition team; in Part 2, teachers create avatars based on descriptions of students; and in Part 3, teachers are tasked with teaching a virtual classroom of avatar students to practice holding back unconscious biases.",
       members: ["Haeram Jang", "Ray Chen", "Kazuki Saito", "Suan Kang"]
