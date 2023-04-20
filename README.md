@@ -1,6 +1,6 @@
 # README.md
 
-[GitPages URL](https://jmk2142.github.io/innovationAward/)
+[GitPages URL](https://jmk2142.github.io/INA/)
 
 ## CHANGE LOG
 
