@@ -1,26 +1,26 @@
-// let winners = [
-//     {
-//       teamName: "Melionaire",
-//       projectName: "Dollar Dollar",
-//       documentURL: "Melionaire.pdf",
-//       youtubeURL: "https://youtu.be/pjuJPCd0pZk",
-//       youtubeID: "pjuJPCd0pZk",
-//       videoFileURL: "",
-//       summary: "In the Metaverse, where the virtual and the real world are converging, and hence the economies and finances of both worlds, our understanding of this financial convergence is still lacking. Through our design, we hope to bridge that gap through creating a safe environment in the Metaverse where learners get to practice and develop their financial literacy skills.",
-//       members: ["Keying Chen","Anqi Wang","Abu Abdelbagi","Xinyan (Helen) Song"],
-//       award: "INA 2023 Award"
-//     },{
-//       teamName: "Cerberus",
-//       projectName: "Soteria",
-//       documentURL: "Cerberus.pdf",
-//       youTubeURL: "https://youtu.be/WMKj9VgsUiA",
-//       youtubeID: "WMKj9VgsUiA",
-//       videoFileURL: "",
-//       summary: "Our design supports social connectedness in order to improve employee well-being. Both regulation of emotions and genuine self-disclosure have been shown to enhance one's well-being (Luo & Hancock, 2020; Restubog et al., 2020). In having a place to share and participate in shared pain points of remote work isolation and mental wellness, remote workers can partake in a larger community and have access to advice on mental wellness in the remote workspace.",
-//       members: ["Fei Wang","Daniel Ahn","Anh-Thu Phan","Calley Nelson","Jason Reid"],
-//       award: "People's Choice Award"
-//     }
-//   ];
+let winners = [
+    {
+      teamName: "Transcendence",
+      projectName: "aMuse",
+      documentURL: "",
+      youtubeURL: "https://youtu.be/HyqbJb7X2VU",
+      youtubeID: "HyqbJb7X2VU",
+      videoFileURL: "",
+      summary: "aMuse is a music-based journaling app that offers an innovative and enjoyable alternative to traditional journaling. It caters to music lovers and those seeking new creative outlets and empowers them to express and reflect on themselves through AI-assisted songwriting, sound collecting, remixing, and audio journaling. With aMuse, capture the rhythm of your life.",
+      members: ["Jianan Liang", "Dora Zhang", "Shiyue Peng", "Yolanda Xing", "Xichen Li"],
+      award: "INA 2023 Award"
+    },{
+      teamName: "Accessing Autism",
+      projectName: "Magical Girl Kato presents: Conquering Middle School!",
+      documentURL: "",
+      youTubeURL: "https://youtu.be/WdXRYjdUSdc",
+      youtubeID: "WdXRYjdUSdc",
+      videoFileURL: "",
+      summary: "Magical Girl Kato Presents: Conquering Middle School! is a social skills game designed specifically for young people with autism spectrum disorder. Inspired by visual novels, the game uses observation and curiosity to teach social skills in a fun and engaging way. Our design is the result of close collaboration with our target audience, ensuring that the game meets their needs and preferences.",
+      members: ["Daniel Hiterer", "Zhanlan Wei", "Mara Danoff", "Janani Harinarayanan", "Yajuan Wu"],
+      award: "People's Choice Award"
+    }
+  ];
   let teams = [
     {
       teamName: "News AI",
@@ -103,6 +103,15 @@
         videoFileURL: "",
         summary: "Good Mourning is a digital interactive experience designed to informally educate people about the diverse ways of processing grief and to support them in their unique grief experience. The user is a caretaker of a small cemetery where they are able to create a personalized memorial to express their grief and remembrance of their passed loved on. They are also able to read and engage with the stories of other people who have gone through grief, learning that grief can be expressed and manifest in many different emotions and behaviors and that they are not alone.",
         members: ["Molly Friedel", "Shuhan Zhang", "Victoria Wu", "Yiran Wang"]
+      },{
+        teamName: "ChatPal",
+        projectName: "ChatPal",
+        documentURL: "",
+        youtubeURL: "https://youtu.be/sWAG5OWI0PQ",
+        youtubeID: "sWAG5OWI0PQ",
+        videoFileURL: "",
+        summary: "ChatPal is a mixed-reality, AI-powered app that helps international students and individuals with social anxiety become more confident and comfortable having natural conversations in English. It equips individuals to convey their ideas, thoughts, and opinions more effectively in diverse social and professional settings; learners engage in English conversations with virtual intelligent agents in different situations of their choice. The best part is that they are able to practice in a safe virtual space where it is okay to make mistakes, and receive natural, constructive feedback from the AI.",
+        members: ["Jullia Lim", "Je Seung You", "Daria Todua", "Evelyn Le", "Zoe Steckler"]
       }
   ];
   
